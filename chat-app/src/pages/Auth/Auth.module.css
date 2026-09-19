@@ -1,0 +1,251 @@
+.authContainer {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  font-family: var(--font-family-base);
+}
+
+/* Left Panel (Branding) */
+.brandPanel {
+  flex: 1;
+  background-color: var(--bg-dark-sidebar);
+  color: var(--color-white);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 40px;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .brandPanel {
+    display: none; /* Hide branding panel on mobile to focus on forms */
+  }
+}
+
+.brandHeader {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+
+.logoWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+}
+
+.logoIcon {
+  color: var(--primary-blue);
+}
+
+.brandTitle {
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.brandSubtitle {
+  font-size: 14px;
+  color: #9ca3af;
+  letter-spacing: 1px;
+}
+
+.heroText {
+  margin-top: 60px;
+  font-size: 32px;
+  font-weight: bold;
+  line-height: 1.4;
+}
+
+.heroImagePlaceholder {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 40px 0;
+}
+
+.imageBox {
+  width: 80%;
+  height: 250px;
+  background-color: rgba(255, 255, 255, 0.05);
+  border-radius: 16px;
+  border: 1px dashed rgba(255, 255, 255, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #9ca3af;
+}
+
+.brandFooter {
+  font-size: 14px;
+  color: #9ca3af;
+}
+
+/* Right Panel (Forms) */
+.formPanel {
+  flex: 1;
+  background-color: var(--color-white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+}
+
+.formBox {
+  width: 100%;
+  max-width: 400px;
+}
+
+.formHeader {
+  margin-bottom: 32px;
+}
+
+.formTitle {
+  font-size: 28px;
+  font-weight: bold;
+  color: var(--text-main);
+  margin-bottom: 8px;
+}
+
+.formSubtitle {
+  font-size: 14px;
+  color: var(--text-muted);
+}
+
+.inputGroup {
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.inputLabel {
+  display: block;
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--text-main);
+  margin-bottom: 8px;
+}
+
+.inputIcon {
+  position: absolute;
+  left: 12px;
+  top: 36px;
+  color: var(--text-muted);
+}
+
+.inputField {
+  width: 100%;
+  padding: 12px 12px 12px 40px;
+  border: 1px solid var(--border-light);
+  border-radius: 8px;
+  font-size: 14px;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+.inputField:focus {
+  border-color: var(--primary-blue);
+}
+
+.passwordToggle {
+  position: absolute;
+  right: 12px;
+  top: 36px;
+  color: var(--text-muted);
+  cursor: pointer;
+  background: none;
+  border: none;
+}
+
+.optionsRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+  font-size: 14px;
+}
+
+.checkboxLabel {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--text-main);
+  cursor: pointer;
+}
+
+.forgotLink {
+  color: var(--primary-blue);
+  font-weight: 500;
+}
+
+.submitBtn {
+  width: 100%;
+  padding: 12px;
+  background-color: var(--primary-blue);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  margin-bottom: 16px;
+}
+
+.submitBtn:hover {
+  background-color: var(--primary-blue-hover);
+}
+
+.divider {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: var(--text-muted);
+  font-size: 14px;
+  margin-bottom: 16px;
+}
+
+.divider::before, .divider::after {
+  content: '';
+  flex: 1;
+  border-bottom: 1px solid var(--border-light);
+}
+
+.divider::before { margin-right: 16px; }
+.divider::after { margin-left: 16px; }
+
+.googleBtn {
+  width: 100%;
+  padding: 12px;
+  background-color: white;
+  color: var(--text-main);
+  border: 1px solid var(--border-light);
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  transition: background-color 0.2s;
+}
+
+.googleBtn:hover {
+  background-color: #f9fafb;
+}
+
+.switchAuth {
+  text-align: center;
+  margin-top: 24px;
+  font-size: 14px;
+  color: var(--text-muted);
+}
+
+.switchAuthLink {
+  color: var(--primary-blue);
+  font-weight: 500;
+  margin-left: 4px;
+}

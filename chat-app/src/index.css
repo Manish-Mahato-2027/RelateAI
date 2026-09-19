@@ -1,0 +1,19 @@
+:root {
+  --bg-dark-sidebar: #20343b;
+  --bg-light-main: #f6f8f7;
+  --color-white: #ffffff;
+  --primary-blue: #d47757;
+  --border-light: #e5ebea;
+  --text-muted: #82909a;
+  --success-green: #57ae8e;
+  font-family: "Trebuchet MS", "Segoe UI", sans-serif;
+  color: #18232c;
+  background: var(--bg-light-main);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+* { box-sizing: border-box; }
+body { margin: 0; min-width: 320px; }
+button, input { font: inherit; }
